@@ -45,10 +45,10 @@ public class Principal {
                 b = obtenerBook();
                 System.out.println(b);
                 System.out.println("Ingrese los nombres y apellidos nuevos");
-                b = new Libro(id, sbook.nextLine(), sbook.nextLine());
+                b = new Libro (sc.nextInt(), sbook.nextLine(), sbook.nextLine(), sbook.nextInt(), sbook.nextLine(), sbook.nextLine(), sbook.nextFloat());
 	
                 try {
-		bookDao.editarBook(b);
+		bookDao.editBook(b);
                 } catch (Exception ex) {
 		System.out.println("No se puede actualizar el registro");
                 }
