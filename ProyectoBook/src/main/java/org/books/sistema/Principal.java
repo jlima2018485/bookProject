@@ -1,5 +1,7 @@
 package org.books.sistema;
 
+import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 import org.books.dao.LibroJpaController;
 import org.books.dominio.Libro;
@@ -48,7 +50,11 @@ public class Principal {
 
                 break;
             case 5:
-
+                List<Libro> libro = bookDao.findLibroEntities();
+                for (Iterator<Libro> iterator = libro.iterator(); iterator.hasNext();) {
+                    Libro next = iterator.next();
+                    System.out.println(next);
+                }
                 break;
             case 6:
 
