@@ -40,7 +40,11 @@ public class Principal {
                    System.out.println(b);
                 break;
             case 2:
-
+                    b = getBook();
+                    if (bookDao.addBook(b))
+                        System.out.println("Se agrego el libro con exito!");
+                    else 
+                        System.out.println("No se pudo agregar el libro intente de nuevo");
                 break;
             case 3:
 
