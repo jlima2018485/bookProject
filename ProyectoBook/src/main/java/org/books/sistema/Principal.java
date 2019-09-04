@@ -49,7 +49,7 @@ public class Principal {
                         System.out.println("No se pudo agregar el libro intente de nuevo");
                 break;
             case 3:
-                b = obtenerBook();
+                b = obtenerLibro();
                 System.out.println(b);
                 System.out.println("Ingrese los nombres y apellidos nuevos");
                 b = new Libro (sc.nextInt(), sbook.nextLine(), sbook.nextLine(), sbook.nextInt(), sbook.nextLine(), sbook.nextLine(), sbook.nextFloat());
