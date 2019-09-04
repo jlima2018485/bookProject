@@ -42,7 +42,16 @@ public class Principal {
 
                 break;
             case 3:
-
+                b = obtenerBook();
+                System.out.println(b);
+                System.out.println("Ingrese los nombres y apellidos nuevos");
+                b = new Libro(id, sbook.nextLine(), sbook.nextLine());
+	
+                try {
+		bookDao.editarBook(b);
+                } catch (Exception ex) {
+		System.out.println("No se puede actualizar el registro");
+                }
                 break;
             case 4:
 
@@ -58,4 +67,9 @@ public class Principal {
                 System.out.println("No Es Una Opcion Del Menu");
         }
     }
+    private static Libro getBook() {
+        System.out.println("Ingrese el codigo, el nombre, el autor, las paginas, el editorial, la categoria y el precio del libro");
+        Libro b = new Libro (sc.nextInt(), sbook.nextLine(), sbook.nextLine(), sbook.nextInt(), sbook.nextLine(), sbook.nextLine(), sbook.nextFloat());
+        return b;
+	}
 }
