@@ -40,21 +40,21 @@ public class Principal {
 
             switch (op) {
                 case 1:
-                    System.out.println("¿Desea regresar al menú Principal?");
                     b = obtenerLibro();
                     System.out.println(b);
+                    System.out.println("¿Desea regresar al menú Principal?");
                     break;
                 case 2:
-                    System.out.println("¿Desea regresar al menú Principal?");
                     b = getBook();
                     if (bookDao.addBook(b)) {
                         System.out.println("Se agrego el libro con exito!");
                     } else {
                         System.out.println("No se pudo agregar el libro intente de nuevo");
                     }
+                    System.out.println("¿Desea regresar al menú Principal?");
                     break;
                 case 3:
-                    System.out.println("¿Desea regresar al menú Principal?");
+                    
                     b = obtenerLibro();
                     System.out.println(b);
                     System.out.println("Ingrese los nombres y apellidos nuevos");
@@ -65,6 +65,7 @@ public class Principal {
                     } catch (Exception ex) {
                         System.out.println("No se puede actualizar el registro");
                     }
+                    System.out.println("¿Desea regresar al menú Principal?");
                     break;
                 case 4:
                     b = obtenerLibro();
@@ -78,15 +79,17 @@ public class Principal {
                     } catch (NonexistentEntityException ex) {
                         System.out.println("No fue posible eliminar el registro");
                         System.out.println("¿Desea regresar al menú Principal?");
+                        
                     }
                     break;
                 case 5:
-                    System.out.println("¿Desea regresar al menú Principal?");
+                    
                     List<Libro> libro = bookDao.findLibroEntities();
                     for (Iterator<Libro> iterator = libro.iterator(); iterator.hasNext();) {
                         Libro next = iterator.next();
                         System.out.println(next);
                     }
+                    System.out.println("¿Desea regresar al menú Principal?");
                     break;
                 case 6:
                     System.out.println("------------------ Cerrando el Programa ------------------");
