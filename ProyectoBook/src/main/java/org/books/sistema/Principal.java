@@ -24,11 +24,11 @@ public class Principal {
             System.out.println("***********************************************************");
             System.out.println("***********************************************************");
             System.out.println("___________________________________________________________");
-            System.out.println(" ~1 Mostrar Persona Por Codigo                             ");
-            System.out.println(" ~2 Agregar Persona Al Sitema Gestor Base De Datos         ");
+            System.out.println(" ~1 Mostrar Libro Por Codigo                             ");
+            System.out.println(" ~2 Agregar Libro Al Sitema Gestor Base De Datos         ");
             System.out.println(" ~3 Actualizar La Tupla                                    ");
             System.out.println(" ~4 Eliminar La Tupla                                      ");
-            System.out.println(" ~5 Listar Persona                                         ");
+            System.out.println(" ~5 Listar Libros                                         ");
             System.out.println(" ~6 Salir                                                  ");
             System.out.println("___________________________________________________________");
             System.out.println("  Ingrese Una Opcion A Realizar Por Favor...               ");

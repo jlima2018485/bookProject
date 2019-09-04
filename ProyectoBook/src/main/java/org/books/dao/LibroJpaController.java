@@ -26,7 +26,7 @@ public class LibroJpaController implements Serializable {
     private EntityManagerFactory emf = null;
 
     public LibroJpaController() {
-        this.emf = Persistence.createEntityManagerFactory("DB_BOOKS");
+        this.emf = Persistence.createEntityManagerFactory("DatabaseConnection");
     }
 
     public EntityManager getEntityManager() {
